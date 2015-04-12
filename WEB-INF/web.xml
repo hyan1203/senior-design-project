@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name></display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>DoAjaxServlet</servlet-name>
+		<servlet-class>com.test.servlets.webserviceGet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DoAjaxServlet</servlet-name>
+		<url-pattern>/servlet/ServletDemoSecond</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DoAjaxServletDatabase</servlet-name>
+		<servlet-class>com.test.servlets.databaseGet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DoAjaxServletDatabase</servlet-name>
+		<url-pattern>/servlet/ServletDatabase</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DoAjaxServletYL</servlet-name>
+		<servlet-class>com.test.servlets.webserviceYLGet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DoAjaxServletYL</servlet-name>
+		<url-pattern>/servlet/ServletYL</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>DoAjaxServletYLhour</servlet-name>
+		<servlet-class>com.test.servlets.webserviceYLhourGet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DoAjaxServletYLhour</servlet-name>
+		<url-pattern>/servlet/ServletYLhour</url-pattern>
+	</servlet-mapping>
+</web-app>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp href="worldStreetMap.jnlp">
+    <information>
+        <title>world street map</title>
+        <vendor>summer</vendor>
+        <offline-allowed/>
+    </information>
+	<security>
+	<all-permissions/>
+	</security>
+    <resources os="Windows">
+        <property name="sun.java2d.noddraw" value="true"/>
+    </resources>
+    <resources>
+        <j2se version="1.5+" href="http://java.sun.com/products/autodl/j2se"/>
+         <jar href="worldStreetMap.jar" main="true"/>
+        <jar href="worldwind.jar"/>
+        <jar href="jogl-all.jar"/>
+        <jar href="gluegen-rt.jar"/>
+        <jar href="jogl-all-natives-windows-amd64.jar" />
+        <jar href="jogl-all-natives-windows-i586.jar" />
+        <jar href="gluegen-rt-natives-windows-amd64.jar" />
+        <jar href="gluegen-rt-natives-windows-i586.jar" />
+        </resources>
+        <applet-desc
+         name="world street applet" main-class="cn.cdut.itu.applet.WWJApplet"
+         width="800" height="600">
+       </applet-desc>
+  <update check="background"/>
+</jnlp>

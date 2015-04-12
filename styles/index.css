@@ -1,0 +1,12 @@
+@import (html.css);
+
+.header{
+	background:#1E4176 url(../images/ui/hd-bg.gif) repeat-x scroll 0pt;
+	border:0pt none;
+	color:#FFF;	
+	margin:0;
+	height:32px;
+}
+
+.header h1 {font-size:14px; line-height:31px; padding:0 5px;}
+.header h1 samp { font-size:12px; color:#CCC; font-weight:normal; margin-left:8px;} 
